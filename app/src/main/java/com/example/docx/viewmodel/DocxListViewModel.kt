@@ -105,8 +105,8 @@ class DocxListViewModel(application: Application) : AndroidViewModel(application
             )
 
             val selection = "(${MediaStore.Files.FileColumns.MIME_TYPE} = ? OR " +
-                          "${MediaStore.Files.FileColumns.DISPLAY_NAME} LIKE ?) AND " +
-                          "${MediaStore.Files.FileColumns.SIZE} > 0"
+                    "${MediaStore.Files.FileColumns.DISPLAY_NAME} LIKE ?) AND " +
+                    "${MediaStore.Files.FileColumns.SIZE} > 0"
 
             val selectionArgs = arrayOf(
                 "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
