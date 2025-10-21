@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.espresso.core)
     implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.compose.runtime.saveable)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -113,6 +114,11 @@ dependencies {
     implementation("org.apache.poi:poi:$poiVersion")
     implementation("org.apache.poi:poi-ooxml:$poiVersion")
 
+    // Apache POI dependencies for DOCX handling
+    implementation("org.apache.poi:poi:5.2.3")
+    implementation("org.apache.poi:poi-ooxml:5.2.3")
 
-
+    // Required for Android compatibility
+    implementation("org.apache.commons:commons-compress:1.24.0")
+    implementation("org.apache.xmlbeans:xmlbeans:5.1.1")
 }
